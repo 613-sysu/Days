@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="12dp"/>
+
+    <!--android:layout_toRightOf="@+id/item_image"-->
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_toRightOf="@+id/item_image"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dp"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_title"
+            android:textSize="12sp"
+            android:gravity="left"
+            android:textColor="#666666"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sub_day"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/start_end"
+        android:layout_marginRight="8sp"
+        android:layout_centerVertical="true"
+        android:textSize="25sp"
+        android:textColor="#333333"/>
+
+    <ImageView
+        android:id="@+id/start_end"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="12dp"/>
+
+</RelativeLayout>
