@@ -1,20 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.lixudong.days.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:context="com.example.jushalo.days.MainActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@mipmap/bg1"
+    android:id="@+id/bg">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="4.5">
+        <TextView
+            android:id="@+id/main_page_event"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新年"
+            android:textColor="#eeeeee"
+            android:textSize="18sp"/>
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/main_page_tag"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还有"
+            android:textColor="#eeeeee"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/main_page_days"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27"
+            android:textColor="#eeeeee"
+            android:textSize="64sp"/>
+
+        <TextView
+            android:id="@+id/main_page_date"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-01-01"
+            android:textColor="#eeeeee"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#aaffffff">
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+        <ImageButton
+            android:id="@+id/main_page_null_button"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/nocontent_xhdpi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/main_page_null_hint"
+            android:layout_below="@id/main_page_null_button"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:text="暂时无内容,赶紧去添加吧"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</LinearLayout>
