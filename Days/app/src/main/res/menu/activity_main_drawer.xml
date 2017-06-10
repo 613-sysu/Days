@@ -3,34 +3,43 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_all"
+            android:icon="@mipmap/icon_all"
+            android:title="全部" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_work"
+            android:icon="@mipmap/icon_work"
+            android:title="工作" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_study"
+            android:icon="@mipmap/icon_study"
+            android:title="学习" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_anniversary"
+            android:icon="@mipmap/icon_love"
+            android:title="纪念日" />
+        <item
+            android:id="@+id/nav_birthday"
+            android:icon="@mipmap/icon_birthday"
+            android:title="生日" />
+        <item
+            android:id="@+id/nav_life"
+            android:icon="@mipmap/icon_life"
+            android:title="生活" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@mipmap/icon_event"
+            android:title="事件" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="设置">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_change"
+                android:icon="@mipmap/changebg"
+                android:title="更换背景" />
         </menu>
     </item>
+
 
 </menu>

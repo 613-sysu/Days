@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>事件</item>
+        <item>学习</item>
+        <item>纪念日</item>
+        <item>生日</item>
+        <item>生活</item>
+        <item>工作</item>
+    </string-array>
+
+    <string-array name="remind">
+        <item>不提醒</item>
+        <item>每周一次</item>
+    </string-array>
+</resources>
