@@ -1,4 +1,4 @@
-package com.example.jushalo.days;
+package com.example.lixudong.days;
 
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -29,8 +29,8 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.jushalo.days.MonthDateView;
-import com.example.jushalo.days.MonthDateView.DateClick;
+import com.example.lixudong.days.MonthDateView;
+import com.example.lixudong.days.MonthDateView.DateClick;
 
 public class CalendarActivity extends FragmentActivity {
 	private ImageView iv_left;

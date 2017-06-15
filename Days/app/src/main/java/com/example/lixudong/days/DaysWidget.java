@@ -1,4 +1,4 @@
-package com.example.jushalo.days;
+package com.example.lixudong.days;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;

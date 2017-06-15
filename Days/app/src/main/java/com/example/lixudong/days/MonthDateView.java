@@ -1,9 +1,9 @@
-package com.example.jushalo.days;
+package com.example.lixudong.days;
 
 import java.util.Calendar;
 import java.util.List;
 
-import com.example.jushalo.days.R;
+import com.example.lixudong.days.R;
 
 import android.content.Context;
 import android.graphics.Canvas;
